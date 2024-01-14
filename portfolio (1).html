@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="images/Harsh(2).jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm  <span>Harsh</span><br>Ranjan From US</h1>
+        </div>
+    </div>
+</div>
+<!---------about --------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+                <img src="images/HarshRanjan-fotor-bg-remover-20231129234612.png">
+            <div class="about-col-2"></div>
+               <h1 class="sub-title">About me</h1>
+               <p>Hi! I am a first year Computer science engineering student at MIT pune, one of the top engineering schools in the country. currently 18 years old, I live in Mumbai.
+                While I am an enthusiastic learner and love to explore new fields all the time , my current interests revolve around domains like Data science, or more broadly Machine learning , Artificial Intelligence , Finance and Consulting .... The use of technology in the financial world is something I am excited about.
+                I mentor students in my free time for the Joint entrance examination on Quora.
+                
+                Keep Pushing your limits...</p>
+
+                <div class="tab-title">
+                    <P class="tab-links active-link" onclick="opentab('skills')">Skills</P>
+                    <P class="tab-links" onclick="opentab('experience')">Experience</P>
+                    <P class="tab-links" onclick="opentab('education')">Education</P>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desigining web/app interfaces</li>
+                        <li><span>Software Engineer </span><br>Software Developer</li>
+                        <li><span>algorithmic Trader</span><br>Research analyst</li>
+                    </uL>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec 2023 - Current</span><br>Strategic Partner at Unacademy</li>
+                        <li><span>Oct 2023 - Dec 2023</span><br>Research analyst intern at Density</li>
+                    </uL>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Cracked Joint Entrance Examination</li>
+                        <li><span>2023 </span><br>B.Tech Computer Science Engineering MIT Pune</li>
+                    </uL>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks  = documents.getElementsByClassName("tab-links");
+    var tabcontents  = documents.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablinks of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
+</body>
+</html>
